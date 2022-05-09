@@ -1,0 +1,12 @@
+{
+  "packages": ["core", "website"],
+  "version": "independent",
+  "command": {
+    "bootstrap": {
+      "yarnClientArgs": ["--no-yarn-lock"],
+      "npmClientArgs": ["--no-package-lock"],
+      "forceLocal": true
+    }
+  },
+  "useWorkspaces": true
+}

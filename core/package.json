@@ -1,0 +1,51 @@
+{
+  "name": "react-code-preview-layout",
+  "version": "1.0.0",
+  "description": "Code preview layout component",
+  "author": "SunLxy <1011771396@qq.com>",
+  "contributors": [
+    "SunLxy <1011771396@qq.com>",
+    "Kenny Wong <wowohoo@qq.com>"
+  ],
+  "homepage": "https://github.com/uiwjs/react-code-preview-layout",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiwjs/react-code-preview-layout.git"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsbb build",
+    "watch": "tsbb watch"
+  },
+  "files": [
+    "lib",
+    "esm",
+    "src"
+  ],
+  "keywords": [
+    "code-layout",
+    "design",
+    "uiw",
+    "uiw-react",
+    "react.js",
+    "react",
+    "react-component",
+    "component",
+    "components",
+    "ui",
+    "uikit",
+    "react-ui"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@uiw/react-codepen": "~1.0.2",
+    "@uiw/react-codesandbox": "~1.1.5",
+    "@uiw/copy-to-clipboard": "^1.0.12"
+  }
+}

@@ -1,1 +1,1 @@
-# react-code-preview-layout
+./core/README.md

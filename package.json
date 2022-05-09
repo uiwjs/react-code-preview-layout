@@ -1,0 +1,60 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "⬇️⬇️⬇️⬇️⬇️ package ⬇️⬇️⬇️⬇️⬇️": "▼▼▼▼▼ package ▼▼▼▼▼",
+    "build": "lerna exec --scope react-code-preview-layout -- npm run build",
+    "watch": "lerna exec --scope react-code-preview-layout -- npm run watch",
+    "watch:core": "npm run-script watch --workspace react-code-preview-layout",
+    "build:core": "npm run-script build --workspace react-code-preview-layout",
+    "⬆️⬆️⬆️⬆️⬆️ package ⬆️⬆️⬆️⬆️⬆️": "▲▲▲▲▲ package ▲▲▲▲▲",
+    "bootstrap": "lerna bootstrap",
+    "hoist": "lerna bootstrap --hoist",
+    "test": "tsbb test",
+    "coverage": "tsbb test --coverage --bail",
+    "prepare": "husky install",
+    "version": "lerna version --exact --force-publish --no-push --no-git-tag-version",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "remove": "npm run clean && lerna exec \"rm -rf package-lock.json\" --scope react-code-preview-layout --scope website",
+    "clean": "lerna clean --yes"
+  },
+  "devDependencies": {
+    "react": "~18.1.0",
+    "react-dom": "~18.1.0",
+    "@types/react": "~18.0.9",
+    "@types/react-dom": "~18.0.3",
+    "tsbb": "~3.7.2",
+    "kkt": "~7.1.7",
+    "husky": "~7.0.4",
+    "lint-staged": "~12.4.0",
+    "prettier": "~2.6.0",
+    "lerna": "~4.0.0",
+    "pretty-quick": "~3.1.3",
+    "react-test-renderer": "~18.0.0"
+  },
+  "dependencies": {
+    "@uiw/react-codepen": "~1.0.2",
+    "@uiw/react-codesandbox": "~1.1.5",
+    "@uiw/copy-to-clipboard": "^1.0.12"
+  },
+  "workspaces": [
+    "core",
+    "website"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,less,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/core/src/**/*.{js,jsx,ts,tsx}"
+    ],
+    "testMatch": [
+      "<rootDir>/test/*.{ts,tsx}"
+    ],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/?!(.*)"
+    ]
+  }
+}

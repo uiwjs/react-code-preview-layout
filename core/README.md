@@ -10,7 +10,7 @@ npm install react-code-preview-layout --save
 
 ```tsx
 import React from "react"
-import CodeLayout from "@uiw/react-code-layout"
+import CodeLayout from "react-code-preview-layout"
 const Demo = ()=>{
   return <CodeLayout
   code={<code style={{color:"red"}} >import React from "react"</code>}
@@ -26,7 +26,7 @@ export default Demo;
 
 ```tsx
 import React from "react"
-import CodeLayout from "@uiw/react-code-layout"
+import CodeLayout from "react-code-preview-layout"
 const Demo = ()=>{
   return <CodeLayout
   code={<code style={{color:"red"}} >import React from "react"</code>}
@@ -43,7 +43,7 @@ export default Demo;
 
 ```tsx
 import React from "react"
-import CodeLayout from "@uiw/react-code-layout"
+import CodeLayout from "react-code-preview-layout"
 const Demo = ()=>{
   return <CodeLayout
   code={<code style={{color:"red"}} >import React from "react"</code>}
@@ -60,7 +60,7 @@ export default Demo;
 
 ```tsx
 import React from "react"
-import CodeLayout from "@uiw/react-code-layout"
+import CodeLayout from "react-code-preview-layout"
 const Demo = ()=>{
   return <CodeLayout
   code={<code style={{color:"red"}} >import React from "react"</code>}
@@ -77,7 +77,7 @@ export default Demo;
 
 ```tsx
 import React from "react"
-import CodeLayout from "@uiw/react-code-layout"
+import CodeLayout from "react-code-preview-layout"
 const code = `import React from "react";\nimport { Button } from "uiw";\nconst Demo = ()=>{\n  return<div><Button>按钮</Button></div>\n};\nexport default Demo;`
 
 const codePenOptions = {

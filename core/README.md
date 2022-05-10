@@ -136,7 +136,7 @@ npm run start
 一如既往，感谢我们出色的贡献者！
 
 <a href="https://github.com/uiwjs/react-code-preview-layout/graphs/contributors">
-  <img src="https://github.com/uiwjs/react-code-preview-layout/CONTRIBUTORS.svg" />
+  <img src="https://github.com/uiwjs/react-code-preview-layout/blob/gh-pages/CONTRIBUTORS.svg />
 </a>
 
 由 [action-contributors](https://github.com/jaywcjlove/github-action-contributors) 生成。

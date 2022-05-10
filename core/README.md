@@ -1,6 +1,7 @@
-# react-code-preview-layout
+react-code-preview-layout
+==========
 
-简化示例代码块与示例预览布局
+用于简化示例代码块与示例预览布局
 
 ```bash
 npm install react-code-preview-layout --save
@@ -44,11 +45,11 @@ export default Demo;
 ```tsx
 import React from "react"
 import CodeLayout from "react-code-preview-layout"
-const Demo = ()=>{
+const Demo = () => {
   return <CodeLayout
-  code={<code style={{color:"red"}} >import React from "react"</code>}
-  copyNodes={`import React from "react"`}
-  customButton={<div>按钮</div>}
+    code={<code style={{ color: "red" }} >import React from "react"</code>}
+    copyNodes={`import React from "react"`}
+    customButton={<div>按钮</div>}
   >
     <div>示例内容</div>
   </CodeLayout>
@@ -56,7 +57,7 @@ const Demo = ()=>{
 export default Demo;
 ```
 
-## 只有效果，没有操作按钮部分
+## 无操作按钮
 
 ```tsx
 import React from "react"
@@ -115,3 +116,26 @@ export default Demo;
 | codePenOptions | codePen 预览配置参数 | `CodePenOption & { includeModule?: string[] }` | - |
 | className |  | `string` | - |
 
+
+## 开发
+
+```bash
+npm install   # Install dependencies
+
+npm run watch
+npm run start
+```
+
+## 贡献者
+
+一如既往，感谢我们出色的贡献者！
+
+<a href="https://github.com/uiwjs/react-code-preview-layout/graphs/contributors">
+  <img src="https://github.com/uiwjs/react-code-preview-layout/CONTRIBUTORS.svg" />
+</a>
+
+由 [action-contributors](https://github.com/jaywcjlove/github-action-contributors) 生成。
+
+### License
+
+Licensed under the MIT License.

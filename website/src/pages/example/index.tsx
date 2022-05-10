@@ -45,7 +45,7 @@ const App = () => {
     <React.Fragment>
       <fieldset>
         <legend>基础</legend>
-        <CodeLayout code={<code style={{ color: 'red' }}>{code}</code>} copyNodes={code}>
+        <CodeLayout title="示例" code={<code style={{ color: 'red' }}>{code}</code>} copyNodes={code}>
           <Button>按钮</Button>
         </CodeLayout>
       </fieldset>

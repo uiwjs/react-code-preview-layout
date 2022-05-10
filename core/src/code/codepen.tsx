@@ -1,5 +1,5 @@
 import Codepen, { CodePenOption } from '@uiw/react-codepen';
-
+import React from 'react';
 const Code = (props: CodePenOption & { includeModule?: string[] }) => {
   const { includeModule, ...rest } = props;
   if (rest && rest.js) {
@@ -13,7 +13,7 @@ const Code = (props: CodePenOption & { includeModule?: string[] }) => {
     });
   }
   return (
-    <div className="preview-button-ccs">
+    <div className="preview-button-span preview-button-ccs">
       <Codepen {...rest}>
         <svg
           className="icon"

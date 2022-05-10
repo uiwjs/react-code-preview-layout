@@ -5,6 +5,12 @@ fieldset {
 fieldset .code-preview-layout {
   background-color: var(--color-header-bg);
 }
+fieldset .code-preview-layout .preview-code {
+  background-color: var(--color-code-bg);
+}
+.code-preview-layout .preview-button .preview-button-span {
+  background-color: var(--color-button-span-bg);
+}
 body {
   margin: 0;
 }

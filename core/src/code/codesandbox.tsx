@@ -1,8 +1,9 @@
 import CodeSandbox, { CodeSandboxProps } from '@uiw/react-codesandbox';
+import React from 'react';
 
 const Code = (props: CodeSandboxProps) => {
   return (
-    <div className="preview-button-ccs">
+    <div className="preview-button-span preview-button-ccs">
       <CodeSandbox {...props}>
         <svg
           className="icon"

@@ -16,6 +16,7 @@ const code = `import React from "react";\nimport { Button } from "uiw";\nconst D
 
 const Demo = ()=>{
   return <CodeLayout
+  title="示例"
   code={<code style={{color:"red"}} >{code}</code>}
   copyNodes={code}
   >
@@ -120,6 +121,7 @@ export default Demo;
 | codeSandboxOptions | codeSandbox 预览配置参数 | `codeSandboxOptions` | - |
 | codePenOptions | codePen 预览配置参数 | `CodePenOption & { includeModule?: string[] }` | - |
 | className |  | `string` | - |
+| title | 左侧标题部分  | `React.ReactNode` | - |
 
 
 ## 开发

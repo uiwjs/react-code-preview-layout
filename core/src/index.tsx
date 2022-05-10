@@ -1,5 +1,6 @@
 import Code from './code';
 import { CodeLayoutProps } from './interface';
+import React from 'react';
 import './styles/index.css';
 export * from './interface';
 
@@ -15,6 +16,7 @@ const CodeLayout = (props: CodeLayoutProps) => {
     codePadding = 16,
     codeSandboxOptions,
     codePenOptions,
+    title,
     ...rest
   } = props;
   return (
@@ -22,6 +24,7 @@ const CodeLayout = (props: CodeLayoutProps) => {
       <div {...rest} className={`preview preview-body-${bordered}`} />
       {!noButton && (
         <Code
+          title={title}
           codeSandboxOptions={codeSandboxOptions}
           codePenOptions={codePenOptions}
           codePadding={codePadding}

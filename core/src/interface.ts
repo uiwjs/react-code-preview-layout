@@ -17,6 +17,8 @@ export interface CodeProps {
     /** 不需要注释的包 **/
     includeModule?: string[];
   };
+  /** 标题部分 **/
+  title?: React.ReactNode;
 }
 
 export interface CodeLayoutProps extends CodeProps {

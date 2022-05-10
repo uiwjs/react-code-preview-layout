@@ -11,6 +11,9 @@ fieldset .code-preview-layout .preview-code {
 .code-preview-layout .preview-button .preview-button-span {
   background-color: var(--color-button-span-bg);
 }
+.code-preview-layout .preview-code .preview-button-copy {
+  background-color: var(--color-button-span-bg);
+}
 body {
   margin: 0;
 }

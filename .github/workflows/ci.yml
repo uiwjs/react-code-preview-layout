@@ -14,7 +14,11 @@ jobs:
         with:
           node-version: 14
 
+      - run: npm -v
+      - run: npm install -g npm@7
       - run: npm install
+      - run: npm -v
+      - run: npm install --workspaces
       - run: npm run build
       - run: npm run doc
 

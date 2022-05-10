@@ -12,10 +12,12 @@ npm install react-code-preview-layout --save
 ```tsx
 import React from "react"
 import CodeLayout from "react-code-preview-layout"
+const code = `import React from "react";\nimport { Button } from "uiw";\nconst Demo = ()=>{\n  return<div><Button>按钮</Button></div>\n};\nexport default Demo;`
+
 const Demo = ()=>{
   return <CodeLayout
-  code={<code style={{color:"red"}} >import React from "react"</code>}
-  copyNodes={`import React from "react"`}
+  code={<code style={{color:"red"}} >{code}</code>}
+  copyNodes={code}
   >
     <div>示例内容</div>
   </CodeLayout>
@@ -28,10 +30,11 @@ export default Demo;
 ```tsx
 import React from "react"
 import CodeLayout from "react-code-preview-layout"
+const code = `import React from "react";\nimport { Button } from "uiw";\nconst Demo = ()=>{\n  return<div><Button>按钮</Button></div>\n};\nexport default Demo;`
 const Demo = ()=>{
   return <CodeLayout
-  code={<code style={{color:"red"}} >import React from "react"</code>}
-  copyNodes={`import React from "react"`}
+  code={<code style={{color:"red"}} >{code}</code>}
+  copyNodes={code}
   bordered={false}
   >
     <div>示例内容</div>
@@ -45,10 +48,11 @@ export default Demo;
 ```tsx
 import React from "react"
 import CodeLayout from "react-code-preview-layout"
+const code = `import React from "react";\nimport { Button } from "uiw";\nconst Demo = ()=>{\n  return<div><Button>按钮</Button></div>\n};\nexport default Demo;`
 const Demo = () => {
   return <CodeLayout
-    code={<code style={{ color: "red" }} >import React from "react"</code>}
-    copyNodes={`import React from "react"`}
+    code={<code style={{color:"red"}} >{code}</code>}
+    copyNodes={code}
     customButton={<div>按钮</div>}
   >
     <div>示例内容</div>
@@ -62,10 +66,11 @@ export default Demo;
 ```tsx
 import React from "react"
 import CodeLayout from "react-code-preview-layout"
+const code = `import React from "react";\nimport { Button } from "uiw";\nconst Demo = ()=>{\n  return<div><Button>按钮</Button></div>\n};\nexport default Demo;`
 const Demo = ()=>{
   return <CodeLayout
-  code={<code style={{color:"red"}} >import React from "react"</code>}
-  copyNodes={`import React from "react"`}
+  code={<code style={{color:"red"}} >{code}</code>}
+  copyNodes={code}
   noButton={true}
   >
     <div>示例内容</div>

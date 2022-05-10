@@ -14,6 +14,7 @@ export interface CodeProps {
   codeSandboxOptions?: CodeSandboxProps;
   /** codePen参数 **/
   codePenOptions?: CodePenOption & {
+    /** 不需要注释的包 **/
     includeModule?: string[];
   };
 }

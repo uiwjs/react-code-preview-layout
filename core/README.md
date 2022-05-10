@@ -4,7 +4,9 @@ react-code-preview-layout
 [![CI](https://github.com/uiwjs/react-code-preview-layout/actions/workflows/ci.yml/badge.svg)](https://github.com/uiwjs/react-code-preview-layout/actions/workflows/ci.yml)
 [![NPM version](https://img.shields.io/npm/v/react-code-preview-layout.svg?style=flat)](https://npmjs.org/package/react-code-preview-layout)
 
-用于简化示例代码块与示例预览布局 ,内置`@uiw/react-codepen`和`@uiw/react-codesandbox`依赖，用于动态地从代码示例生成`codepen`项目和`codesandbox`项目。
+展示 `代码` 与 `代码在线预览示例` 布局的一个 react 组件。配合 [markdown-react-code-preview-loader](https://github.com/kktjs/markdown-react-code-preview-loader) Webpack Loader 可很好的用于文档中的 react 示例展示。
+
+组件内置 [`@uiw/react-codepen`](https://github.com/uiwjs/react-codepen) 和 [`@uiw/react-codesandbox`](https://github.com/uiwjs/react-codesandbox) 依赖，用于动态地将代码示例生成 [`codepen`](https://github.com/uiwjs/react-codepen) 项目和 [`codesandbox`](https://codesandbox.io/)  项目。
 
 ```bash
 npm install react-code-preview-layout --save

@@ -1,5 +1,8 @@
 react-code-preview-layout
-==========
+===
+
+[![CI](https://github.com/uiwjs/react-code-preview-layout/actions/workflows/ci.yml/badge.svg)](https://github.com/uiwjs/react-code-preview-layout/actions/workflows/ci.yml)
+[![NPM version](https://img.shields.io/npm/v/react-code-preview-layout.svg?style=flat)](https://npmjs.org/package/react-code-preview-layout)
 
 用于简化示例代码块与示例预览布局 ,内置`@uiw/react-codepen`和`@uiw/react-codesandbox`依赖，用于动态地从代码示例生成`codepen`项目和`codesandbox`项目。
 
@@ -138,7 +141,7 @@ npm run start
 一如既往，感谢我们出色的贡献者！
 
 <a href="https://github.com/uiwjs/react-code-preview-layout/graphs/contributors">
-  <img src="https://github.com/uiwjs/react-code-preview-layout/blob/gh-pages/CONTRIBUTORS.svg />
+  <img src="https://github.com/uiwjs/react-code-preview-layout/blob/gh-pages/CONTRIBUTORS.svg" />
 </a>
 
 由 [action-contributors](https://github.com/jaywcjlove/github-action-contributors) 生成。

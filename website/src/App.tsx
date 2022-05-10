@@ -6,7 +6,7 @@ import '@wcj/dark-mode';
 const App = () => {
   return (
     <Fragment>
-      <GitHubCorners target="__blank" fixed href="https://github.com/kktjs/markdown-react-code-preview-loader" />
+      <GitHubCorners target="__blank" fixed href="https://github.com/uiwjs/react-code-preview-layout" />
       <div className={styles.dark}>
         <dark-mode permanent></dark-mode>
       </div>

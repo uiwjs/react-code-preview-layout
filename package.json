@@ -3,7 +3,6 @@
   "private": true,
   "scripts": {
     "⬇️⬇️⬇️⬇️⬇️ package ⬇️⬇️⬇️⬇️⬇️": "▼▼▼▼▼ package ▼▼▼▼▼",
-    "install": "npm run build",
     "watch": "npm run-script watch --workspace react-code-preview-layout",
     "build": "npm run-script build --workspace react-code-preview-layout",
     "doc": "npm run-script build --workspace website",

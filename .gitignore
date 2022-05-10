@@ -7,6 +7,7 @@ yarn-debug.log*
 yarn-error.log*
 package-lock.json
 yarn.lock
+build
 
 *.lerna_backup
 .DS_Store

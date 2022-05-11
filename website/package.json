@@ -16,7 +16,7 @@
     "@kkt/less-modules": "~7.1.1",
     "@kkt/raw-modules": "~7.1.1",
     "@types/react-dom": "18.0.3",
-    "markdown-react-code-preview-loader": "^1.3.0"
+    "markdown-react-code-preview-loader": "^2.0.0"
   },
   "dependencies": {
     "@uiw/react-github-corners": "^1.5.14",

@@ -18,6 +18,9 @@ const App = () => {
           <NavLink to="/example" replace>
             示例
           </NavLink>
+          <NavLink to="/markdown-example" replace>
+            Markdown 示例
+          </NavLink>
         </nav>
       </header>
       <div className={styles.body}>

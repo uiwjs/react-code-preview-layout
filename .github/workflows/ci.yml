@@ -10,15 +10,12 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 16
 
       - run: npm -v
-      - run: npm install -g npm@7
       - run: npm install
-      - run: npm -v
-      - run: npm install --workspaces
       - run: npm run build
       - run: npm run doc
 

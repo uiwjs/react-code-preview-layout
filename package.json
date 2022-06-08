@@ -26,7 +26,7 @@
     "husky": "~7.0.4",
     "lint-staged": "~12.4.0",
     "prettier": "~2.6.0",
-    "lerna": "~4.0.0",
+    "lerna": "^5.1.0",
     "pretty-quick": "~3.1.3",
     "react-test-renderer": "~18.0.0"
   },
@@ -34,6 +34,9 @@
     "core",
     "website"
   ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,less,md,json}": [
       "prettier --write"

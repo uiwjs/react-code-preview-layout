@@ -67,7 +67,7 @@ jobs:
             Comparing Changes: ${{ steps.changelog.outputs.compareurl }}  
 
             ```bash
-            npm i idoc@${{steps.changelog.outputs.version}}
+            npm i react-code-preview-layout@${{steps.changelog.outputs.version}}
             ```
 
             ${{ steps.changelog.outputs.changelog }}

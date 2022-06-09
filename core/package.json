@@ -42,8 +42,8 @@
     "react-ui"
   ],
   "peerDependencies": {
-    "react": ">=18.0.0",
-    "react-dom": ">=18.0.0"
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   },
   "dependencies": {
     "@uiw/copy-to-clipboard": "^1.0.12"

@@ -6,8 +6,6 @@ react-code-preview-layout
 
 展示 `代码` 与 `代码在线预览示例` 布局的一个 react 组件。配合 [markdown-react-code-preview-loader](https://github.com/kktjs/markdown-react-code-preview-loader) Webpack Loader 可很好的用于文档中的 react 示例展示。
 
-组件内置 [`@uiw/react-codepen`](https://github.com/uiwjs/react-codepen) 和 [`@uiw/react-codesandbox`](https://github.com/uiwjs/react-codesandbox) 依赖，用于动态地将代码示例生成 [`codepen`](https://github.com/uiwjs/react-codepen) 项目和 [`codesandbox`](https://codesandbox.io/)  项目。
-
 ```bash
 npm install react-code-preview-layout --save
 ```
@@ -132,6 +130,8 @@ export default Demo;
 ```
 
 ## 添加 Codepen 按钮
+
+可以使用 [`@uiw/react-codepen`](https://github.com/uiwjs/react-codepen) 和 [`@uiw/react-codesandbox`](https://github.com/uiwjs/react-codesandbox) 组件添加代码预览按钮，他们用于动态地将代码示例生成 [`codepen`](https://github.com/uiwjs/react-codepen) 项目和 [`codesandbox`](https://codesandbox.io/)  项目。
 
 ```jsx mdx:preview?title=添加 Codepen 按钮
 import React from "react"

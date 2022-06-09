@@ -3,7 +3,7 @@ import { Copied } from './Copied';
 import { ExpandIcon } from './icons';
 import './styles.css';
 
-interface CodeLayoutProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+export interface CodeLayoutProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   prefixCls?: string;
   /** 原始 代码块 渲染**/
   code?: React.ReactNode;

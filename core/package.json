@@ -7,7 +7,7 @@
     "SunLxy <1011771396@qq.com>",
     "Kenny Wong <wowohoo@qq.com>"
   ],
-  "homepage": "https://github.com/uiwjs/react-code-preview-layout",
+  "homepage": "https://uiwjs.github.io/react-code-preview-layout/",
   "repository": {
     "type": "git",
     "url": "https://github.com/uiwjs/react-code-preview-layout.git"
@@ -26,6 +26,8 @@
     "src"
   ],
   "keywords": [
+    "code-preview",
+    "code-preview-layout",
     "code-layout",
     "design",
     "uiw",

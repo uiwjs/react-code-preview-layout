@@ -19,6 +19,8 @@
     "markdown-react-code-preview-loader": "^2.0.0"
   },
   "dependencies": {
+    "@uiw/react-codepen": "~1.0.2",
+    "@uiw/react-codesandbox": "~1.1.5",
     "@uiw/react-github-corners": "^1.5.14",
     "@uiw/react-markdown-preview": "^4.0.9",
     "@wcj/dark-mode": "^1.0.14",

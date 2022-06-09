@@ -6,7 +6,7 @@ Markdown Preview Example
 ### 基本用法
 
 ```jsx mdx:preview:demo12
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { Button, Divider, Icon } from 'uiw';
 
 export default function Demo() {
@@ -39,7 +39,7 @@ export default function Demo() {
 ### 按钮组
 
 ```jsx mdx:preview
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { Button, ButtonGroup, Divider, Icon } from 'uiw';
 
 export default function Demo() {

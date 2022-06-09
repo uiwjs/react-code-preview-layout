@@ -13,13 +13,14 @@ const App = () => {
       <header className={styles.header}>
         <nav>
           <NavLink to="/" replace>
-            文档
+            Document
           </NavLink>
           <NavLink to="/example" replace>
-            示例
+            {' '}
+            Demo{' '}
           </NavLink>
           <NavLink to="/markdown-example" replace>
-            Markdown 示例
+            Markdown Demo
           </NavLink>
         </nav>
       </header>

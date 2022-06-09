@@ -3,7 +3,7 @@
   "name": "website",
   "description": "Simple React package development project example template.",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "start": "kkt start",
     "build": "kkt build"
@@ -24,7 +24,7 @@
     "@uiw/react-github-corners": "^1.5.14",
     "@uiw/react-markdown-preview": "^4.0.9",
     "@wcj/dark-mode": "^1.0.14",
-    "react-code-preview-layout": "1.0.0",
+    "react-code-preview-layout": "2.0.0",
     "react-router-dom": "^6.3.0",
     "uiw": "^4.21.6"
   },

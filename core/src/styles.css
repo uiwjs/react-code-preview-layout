@@ -32,8 +32,8 @@
   overflow: auto;
 }
 .w-rcpl-code > * {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .w-disable-checkered > .w-rcpl-preview {
   background-image: none;

@@ -21,6 +21,9 @@
   border-radius: 5px;
   background-color: var(--color-canvas-subtle);
 }
+.w-rcpl-preview {
+  border-radius: 5px 5px 0 0;
+}
 .w-rcpl-code.w-hidden {
   height: 0;
   padding: 0;

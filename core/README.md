@@ -71,6 +71,25 @@ const Demo = () => (
 export default Demo;
 ```
 
+## Preview Background Color
+
+```jsx  mdx:preview
+import React from "react"
+import CodeLayout from "react-code-preview-layout"
+const code = `import React from "react";\nimport { Button } from "uiw";\nconst Demo = ()=>{\n  return<div><Button>按钮</Button></div>\n};\nexport default Demo;`
+const Demo = () => (
+  <CodeLayout
+    code={<code>{code}</code>}
+    text={code}
+    bordered={false}
+    background="#009688b0"
+  >
+    <div>示例内容</div>
+  </CodeLayout>
+);
+export default Demo;
+```
+
 ## 自定义操作按钮
 
 ```jsx mdx:preview?title=自定义操作按钮
@@ -183,9 +202,11 @@ interface CodeLayoutProps extends React.DetailedHTMLProps<React.HTMLAttributes<H
   toolbar?: React.ReactNode;
   /** 额外内容，展示 toolbar 右侧内容 */
   toolbarExtra?: React.ReactNode;
-  disableTollbar?: boolean;
+  disableToolbar?: boolean;
   disableCode?: boolean;
   disablePreview?: boolean;
+  /** 禁用方格背景 */
+  disableCheckered?: boolean;
   /**
    * 是否需要边框
    * @default true

@@ -76,3 +76,32 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           package: ./core/package.json
+
+    outputs:
+      successful: ${{steps.create_tag.outputs.successful }}
+
+  github-package:
+    runs-on: ubuntu-18.04
+    needs: build
+    if: needs.build.outputs.successful
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com
+          scope: '@uiwjs'
+
+      - run: npm install
+      - run: npm run build
+
+      - name: Modify package name
+        working-directory: core
+        shell: bash
+        run: |
+          node -e 'var pkg = require("./package.json"); pkg.name="@uiwjs/react-code-preview-layout"; require("fs").writeFileSync("./package.json", JSON.stringify(pkg, null, 2))'
+
+      - run: npm publish
+        working-directory: core
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

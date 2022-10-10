@@ -85,7 +85,9 @@ const CodeLayout = forwardRef<HTMLDivElement, CodeLayoutProps>((props, ref) => {
           </div>
         </div>
       )}
-      {!disableCode && <div className={`${prefixCls}-code ${showCode ? 'w-display' : 'w-hidden'}`}>{code}</div>}
+      {!disableCode && !disableToolbar && (
+        <div className={`${prefixCls}-code ${showCode ? 'w-display' : 'w-hidden'}`}>{code}</div>
+      )}
     </div>
   );
 });

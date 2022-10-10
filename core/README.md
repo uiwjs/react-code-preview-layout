@@ -121,7 +121,7 @@ const Demo = ()=> (
   <CodeLayout
     code={<code>{code}</code>}
     text={code}
-    disableTollbar
+    disableToolbar
   >
     <div>示例内容</div>
   </CodeLayout>

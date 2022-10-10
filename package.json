@@ -17,18 +17,18 @@
     "clean": "lerna clean --yes"
   },
   "devDependencies": {
-    "react": "~18.1.0",
-    "react-dom": "~18.1.0",
-    "@types/react": "~18.0.9",
-    "@types/react-dom": "~18.0.3",
-    "tsbb": "~3.7.2",
-    "kkt": "~7.1.7",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "@types/react": "~18.0.21",
+    "@types/react-dom": "~18.0.6",
+    "tsbb": "~3.7.7",
+    "kkt": "~7.2.1",
     "husky": "~8.0.0",
     "lint-staged": "~13.0.0",
     "prettier": "~2.6.0",
     "lerna": "^5.1.0",
     "pretty-quick": "~3.1.3",
-    "react-test-renderer": "~18.1.0"
+    "react-test-renderer": "~18.2.0"
   },
   "workspaces": [
     "core",

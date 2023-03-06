@@ -3,7 +3,7 @@
   "name": "website",
   "description": "Simple React package development project example template.",
   "private": true,
-  "version": "2.1.0",
+  "version": "2.1.1",
   "scripts": {
     "start": "kkt start",
     "build": "kkt build"

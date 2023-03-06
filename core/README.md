@@ -207,6 +207,7 @@ interface CodeLayoutProps extends React.DetailedHTMLProps<React.HTMLAttributes<H
   disablePreview?: boolean;
   /** 禁用方格背景 */
   disableCheckered?: boolean;
+  codeProps?: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
   /**
    * 是否需要边框
    * @default true

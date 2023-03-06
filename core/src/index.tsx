@@ -19,6 +19,7 @@ export interface CodeLayoutProps extends React.DetailedHTMLProps<React.HTMLAttri
   disableCheckered?: boolean;
   /** Configure the preview background color. */
   background?: string;
+  codeProps?: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
   /**
    * 是否需要边框
    * @default true
@@ -51,6 +52,7 @@ const CodeLayout = forwardRef<HTMLDivElement, CodeLayoutProps>((props, ref) => {
     code,
     prefixCls = PRE_FIX,
     className,
+    codeProps,
     ...other
   } = props;
   const cls = [prefixCls, className, bordered ? `w-bordered` : null, disableCheckered ? `w-disable-checkered` : null]
@@ -86,7 +88,9 @@ const CodeLayout = forwardRef<HTMLDivElement, CodeLayoutProps>((props, ref) => {
         </div>
       )}
       {!disableCode && !disableToolbar && (
-        <div className={`${prefixCls}-code ${showCode ? 'w-display' : 'w-hidden'}`}>{code}</div>
+        <div className={`${prefixCls}-code ${showCode ? 'w-display' : 'w-hidden'}`} {...codeProps}>
+          {code}
+        </div>
       )}
     </div>
   );

@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+          registry-url: 'https://registry.npmjs.org'
 
       - run: npm -v
       - run: npm install
@@ -72,10 +73,12 @@ jobs:
 
             ${{ steps.changelog.outputs.changelog }}
       
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          package: ./core/package.json
+      - run: npm publish
+        name: 📦 react-code-preview-layout publish to NPM
+        continue-on-error: true
+        working-directory: core
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     outputs:
       successful: ${{steps.create_tag.outputs.successful }}

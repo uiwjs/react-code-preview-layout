@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - v2
 
 jobs:
   build:
@@ -19,7 +19,6 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm run doc
-
       - name: Generate Contributors Images
         uses: jaywcjlove/github-action-contributors@main
         with:
@@ -37,6 +36,13 @@ jobs:
         id: tag_version
         uses: jaywcjlove/changelog-generator@main
 
+      - name: Create README.md of Build
+        working-directory: website/build
+        run: |
+          cat > README.md << EOF
+          Preview the document `react-code-preview-layout@v2`: https://raw.githack.com/uiwjs/react-code-preview-layout/doc2/index.html
+          EOF
+
       - name: Deploy Website
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -44,6 +50,7 @@ jobs:
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: ${{steps.tag_version.outputs.tag}} ${{ github.event.head_commit.message }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: doc3
           publish_dir: ./website/build
 
       - name: Generate Changelog

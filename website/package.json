@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@kkt/less-modules": "~7.2.1",
-    "@kkt/raw-modules": "~7.2.1",
+    "@kkt/raw-modules": "~7.4.0",
     "@types/react": "~18.0.21",
     "@types/react-dom": "~18.0.6",
     "markdown-react-code-preview-loader": "^2.0.0"

@@ -37,6 +37,15 @@ jobs:
         id: tag_version
         uses: jaywcjlove/changelog-generator@main
 
+
+      - name: Create README.md of Build
+        working-directory: website/build
+        run: |
+          cat > README.md << EOF
+          Preview the document `react-code-preview-layout@v3`: https://uiwjs.github.io/react-code-preview-layout/  
+          Preview the document `react-code-preview-layout@v2`: https://raw.githack.com/uiwjs/react-code-preview-layout/doc2/index.html  
+          EOF
+
       - name: Deploy Website
         uses: peaceiris/actions-gh-pages@v3
         with:

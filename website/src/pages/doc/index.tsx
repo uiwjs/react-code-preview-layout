@@ -3,6 +3,10 @@ import CodeLayout from 'react-code-preview-layout';
 import MarkdownPreview from '@uiw/react-markdown-preview';
 import { getMetaId, isMeta, getURLParameters } from 'markdown-react-code-preview-loader';
 
+const Preview = CodeLayout.Preview;
+const Code = CodeLayout.Code;
+const Toolbar = CodeLayout.Toolbar;
+
 const Doc = () => (
   <MarkdownPreview
     disableCopy={true}
@@ -20,8 +24,14 @@ const Doc = () => (
           const code = data.data[metaId].value || '';
           const param = getURLParameters(meta);
           return (
-            <CodeLayout toolbar={param.title || '示例展示'} code={<code {...rest} />} text={code}>
-              <Child />
+            <CodeLayout>
+              <Preview>
+                <Child />
+              </Preview>
+              <Toolbar text={code}>{param.title || 'Code Example'}</Toolbar>
+              <Code>
+                <code {...rest} />
+              </Code>
             </CodeLayout>
           );
         }

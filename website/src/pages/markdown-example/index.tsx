@@ -4,6 +4,10 @@ import { getCodeString } from 'rehype-rewrite';
 import { getMetaId, isMeta, getURLParameters } from 'markdown-react-code-preview-loader';
 import data from './README.md';
 
+const Preview = CodeLayout.Preview;
+const Code = CodeLayout.Code;
+const Toolbar = CodeLayout.Toolbar;
+
 export default function MarkdownExample() {
   return (
     <MarkdownPreview
@@ -22,8 +26,14 @@ export default function MarkdownExample() {
             const code = getCodeString(node.children);
             const param = getURLParameters(meta);
             return (
-              <CodeLayout toolbar={param.title || '示例展示'} code={<code {...rest} />} text={code}>
-                <Child />
+              <CodeLayout>
+                <Preview>
+                  <Child />
+                </Preview>
+                <Toolbar text={code}>{param.title || 'Code Example'}</Toolbar>
+                <Code>
+                  <code {...rest} />
+                </Code>
               </CodeLayout>
             );
           }

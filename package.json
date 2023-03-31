@@ -21,7 +21,7 @@
     "react-dom": "~18.2.0",
     "@types/react": "~18.0.21",
     "@types/react-dom": "~18.0.6",
-    "tsbb": "~3.7.7",
+    "tsbb": "~4.1.0",
     "husky": "~8.0.0",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",

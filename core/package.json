@@ -17,8 +17,8 @@
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsbb build",
-    "watch": "tsbb watch"
+    "build": "tsbb build src/*.tsx --use-babel",
+    "watch": "tsbb watch src/*.tsx --use-babel"
   },
   "files": [
     "lib",

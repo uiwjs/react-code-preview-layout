@@ -49,7 +49,7 @@ const InternalCodePreview = React.forwardRef<HTMLDivElement, CodePreviewProps>((
   );
 });
 
-type CodePreviewComponent = React.FC<React.PropsWithRef<CodePreviewProps>> & {
+type CodePreviewComponent = typeof InternalCodePreview & {
   Preview: typeof Preview;
   Code: typeof Code;
   Toolbar: typeof Toolbar;

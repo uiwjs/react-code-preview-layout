@@ -41,13 +41,13 @@ const Internal = React.forwardRef<HTMLDivElement, CodePreviewProps>((props, ref)
   );
 });
 
-const InternalCodePreview = (props: CodePreviewProps, ref?: React.ForwardedRef<HTMLDivElement>) => {
+const InternalCodePreview = React.forwardRef<HTMLDivElement, CodePreviewProps>((props, ref) => {
   return (
     <Provider value={{ collapse: false }}>
       <Internal {...props} ref={ref} />
     </Provider>
   );
-};
+});
 
 type CodePreviewComponent = React.FC<React.PropsWithRef<CodePreviewProps>> & {
   Preview: typeof Preview;
@@ -55,9 +55,7 @@ type CodePreviewComponent = React.FC<React.PropsWithRef<CodePreviewProps>> & {
   Toolbar: typeof Toolbar;
 };
 
-export const CodePreview: CodePreviewComponent = React.forwardRef<HTMLDivElement>(
-  InternalCodePreview,
-) as unknown as CodePreviewComponent;
+export const CodePreview: CodePreviewComponent = InternalCodePreview as unknown as CodePreviewComponent;
 
 CodePreview.Preview = Preview;
 CodePreview.Toolbar = Toolbar;

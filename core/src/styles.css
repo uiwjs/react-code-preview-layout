@@ -42,7 +42,6 @@
   background-image: none;
 }
 .w-rcpl-preview {
-  white-space: pre-wrap;
   background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpattern id='a' width='16' height='16' patternUnits='userSpaceOnUse'%3E%3Cpath fill='rgba(0, 0, 0, 0.06)' d='M0 0h8v8H0zm8 8h8v8H8z'/%3E%3C/pattern%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3C/svg%3E")
 }
 .w-rcpl-preview, .w-rcpl-code {

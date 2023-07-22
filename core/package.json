@@ -1,6 +1,6 @@
 {
   "name": "react-code-preview-layout",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "A react component showing the layout of `code` and `code preview example`.",
   "author": "SunLxy <1011771396@qq.com>",
   "contributors": [

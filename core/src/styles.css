@@ -33,6 +33,8 @@
   transition: height cubic-bezier(0.360, 0.000, 0.660, -0.560);;
   height: auto;
   overflow: auto;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .w-rcpl-code > * {
   padding: 0 !important;

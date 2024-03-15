@@ -1,7 +1,7 @@
 Markdown Preview Example
 ===
 
-这里是一个示例
+这里是一个`示例`
 
 ### 基本用法
 

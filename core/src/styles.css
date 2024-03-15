@@ -15,6 +15,7 @@
 }
 .w-rcpl.w-bordered > .w-rcpl-code:not(.w-hidden) {
   border-top: 1px dashed var(--color-border-muted);
+  border-radius: 0 0 6px 6px;
 }
 
 .w-rcpl {
@@ -35,6 +36,7 @@
   overflow: auto;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  margin-bottom: 0 !important;
 }
 .w-rcpl-code > * {
   padding: 0 !important;

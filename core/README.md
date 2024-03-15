@@ -29,7 +29,7 @@ const Demo = () => {
         <div>这里是示例展示</div>
       </Preview>
       <Toolbar>Code Example</Toolbar>
-      <Code>
+      <Code tagName="pre">
         {code}
       </Code>
     </CodeLayout>
@@ -57,7 +57,7 @@ const Demo = () => {
         <div>这里是示例展示</div>
       </Preview>
       <Toolbar>Code Example</Toolbar>
-      <Code>
+      <Code tagName="pre">
         {code}
       </Code>
     </CodeLayout>
@@ -84,7 +84,7 @@ const Demo = () => (
       <div>示例内容</div>
     </Preview>
     <Toolbar>Code Example</Toolbar>
-    <Code>
+    <Code tagName="pre">
       {code}
     </Code>
   </CodeLayout>
@@ -110,7 +110,7 @@ const Demo = () => (
       <div>示例内容</div>
     </Preview>
     <Toolbar>Code Example</Toolbar>
-    <Code>
+    <Code tagName="pre">
       {code}
     </Code>
   </CodeLayout>
@@ -137,7 +137,7 @@ const Demo = () => {
         <div>示例内容</div>
       </Preview>
       <Toolbar extra={<div>按钮</div>}>Code Example</Toolbar>
-      <Code>
+      <Code tagName="pre">
         {code}
       </Code>
     </CodeLayout>
@@ -170,7 +170,7 @@ const Demo = ()=> {
           <div>示例内容</div>
         </Preview>
         <Toolbar visible={visible} collapse={!visible}>Code Example</Toolbar>
-        <Code>
+        <Code tagName="pre">
           {code}
         </Code>
       </CodeLayout>
@@ -248,7 +248,7 @@ const Demo = () => (
     <Toolbar text={code} visibleButton={false} extra={extra}>
       Code Example
     </Toolbar>
-    <Code>{code}</Code>
+    <Code tagName="pre">{code}</Code>
   </CodeLayout>
 );
 export default Demo;
@@ -266,7 +266,7 @@ import CodeLayout from "react-code-preview-layout"
   <CodeLayout.Toolbar text={code} visibleButton={false} extra={extra}>
     Code Example
   </CodeLayout.Toolbar>
-  <CodeLayout.Code>{code}</CodeLayout.Code>
+  <CodeLayout.Code tagName="pre">{code}</CodeLayout.Code>
 </CodeLayout>
 ```
 

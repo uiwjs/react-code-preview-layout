@@ -10,7 +10,7 @@
     "⬆️⬆️⬆️⬆️⬆️ package ⬆️⬆️⬆️⬆️⬆️": "▲▲▲▲▲ package ▲▲▲▲▲",
     "test": "tsbb test",
     "coverage": "tsbb test --coverage --bail",
-    "prepare": "husky install",
+    "prepare": "husky",
     "version": "lerna version --exact --force-publish --no-push --no-git-tag-version",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "remove": "npm run clean && lerna exec \"rm -rf package-lock.json\" --scope react-code-preview-layout --scope website",
